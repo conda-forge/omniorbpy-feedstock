@@ -3,7 +3,7 @@ About omniorbpy
 
 Home: http://omniorb.sourceforge.net/index.html
 
-Package license: GPL-2.0
+Package license: GPL-2.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/omniorbpy-feedstock/blob/main/LICENSE.txt)
 
