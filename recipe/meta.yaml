@@ -7,8 +7,6 @@ package:
 source:
   url: https://sourceforge.net/projects/omniorb/files/omniORBpy/omniORBpy-{{ version }}/omniORBpy-{{ version }}.tar.bz2
   sha256: 9da34af0a0230ea0de793be73ee66dc8a87e732fec80437ea91222e272d01be2
-  patches:
-    - patches/0001-get-python-from-correct-prefix.patch
 
 build:
   number: 0
