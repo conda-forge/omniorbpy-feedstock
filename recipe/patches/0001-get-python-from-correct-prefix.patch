@@ -1,0 +1,31 @@
+From 5d31a68539093ca7e14223da12639e5179f7625b Mon Sep 17 00:00:00 2001
+From: Thomas Lockhart <Thomas.Lockhart@jpl.nasa.gov>
+Date: Mon, 25 Feb 2019 17:02:12 -0800
+Subject: [PATCH] get python from correct prefix
+
+---
+ configure | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/configure b/configure
+index 6315fc3..1b60d2d 100644
+--- a/configure
++++ b/configure
+@@ -3567,7 +3567,7 @@ if can_use_sysconfig:
+     sitedir = sysconfig.get_path('purelib', vars={'base':'$am_py_prefix'})
+ else:
+     from distutils import sysconfig
+-    sitedir = sysconfig.get_python_lib(0, 0, prefix='$am_py_prefix')
++    sitedir = sysconfig.get_python_lib()
+ sys.stdout.write(sitedir)"`
+      case $am_cv_python_pythondir in
+      $am_py_prefix*)
+@@ -3611,7 +3611,7 @@ if can_use_sysconfig:
+     sitedir = sysconfig.get_path('platlib', vars={'platbase':'$am_py_prefix'})
+ else:
+     from distutils import sysconfig
+-    sitedir = sysconfig.get_python_lib(1, 0, prefix='$am_py_prefix')
++    sitedir = sysconfig.get_python_lib()
+ sys.stdout.write(sitedir)"`
+      case $am_cv_python_pyexecdir in
+      $am_py_exec_prefix*)
