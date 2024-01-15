@@ -1,4 +1,4 @@
-{% set version = "4.3.1" %}
+{% set version = "4.3.2" %}
 
 package:
   name: omniorbpy
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://sourceforge.net/projects/omniorb/files/omniORBpy/omniORBpy-{{ version }}/omniORBpy-{{ version }}.tar.bz2
-  sha256: 9da34af0a0230ea0de793be73ee66dc8a87e732fec80437ea91222e272d01be2
+  sha256: cb5717d412a101baf430f598cac7d69231884dae4372d8e2adf3ddeebc5f7ebb
 
 build:
   number: 0
